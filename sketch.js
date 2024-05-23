@@ -68,7 +68,7 @@ let locations = {
         next: {}
     },
     'o': {
-        text: "ahhhh \nbliss \nfinally a little peace \nand quiet, away from all \nthat pesky complicated code. \n \nall those functions... \nand curly brackets... \n \nthanks for your help human. \n \ni'll leave you with \nthe only gift i can give you- \n \na quote to ponder: \n \n'One does not become enlightened \nby imagining figures of light, \nbut by making \the darkness conscious.' \n-C.G. Jung \n \n~ ~ ~ \n \nFIN. ",
+        text: "ahhhh \nbliss \nfinally a little peace \nand quiet, away from all \nthat pesky complicated code. \n \nall those functions... \nand curly brackets... \n \nthanks for your help human. \n \ni'll leave you with \nthe only gift i can give you- \n \na quote to ponder: \n \n'One does not become enlightened \nby imagining figures of light, \nbut by making the darkness conscious.' \n-C.G. Jung \n \n~ ~ ~ \n \nFIN. ",
         next: {}
     },
     'p': {
