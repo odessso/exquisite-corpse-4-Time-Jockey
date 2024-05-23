@@ -52,11 +52,23 @@ I kept the horse images and the minute counter, to continue the underlying theme
 I wanted to get across how overwhelming it can feel being online in this day and age. And how we are often bombarded with information, ads and content that we don't necessarily want to see or are interested in.*
 
 ### 🟦 Stage 4
-- Name/Alias:
-- Github account:
-- Published webpage for stage 4:
+- Name/Alias: Odette
+- Github account: https://github.com/odessso
+- Published webpage for stage 4: https://odessso.github.io/exquisite-corpse-4-Time-Jockey/
 
-*... comments to be added here*
+#### Overview:
+- I really liked the aesthetic of Emma's take on Time Jockey - i think the three collages that were cycling through the code are really interesting and feature some cool images. I decded to play on these images and created a game that centres around the original images of the horse which was featured in Kike's code. I really wanted to keep this galloping horse still a major character in the game. Overall there are 16 different locations that are all connected by different paths that the user has some autonmy over choosing. Each location has two options to chooose from roughly. The locations get more and more abstract as the user continues thorugh the game. Although it was really time-consuming it was super fun to make and I had a lot of fun using the ranodmness aspect from the previous codes from Emma, Christina and Kike.
+
+#### Attributes:
+- I created each of the locations by inputing prompts into an AI image generator which I have found to be really successful over the course for creating interesting imagery. I wrote down around 20 potential locations and then made some prompts for each location to see when the generator could come up with. Some worked better than others and took some trial and error.
+- I created a simple base for the game that allowed me to layout all the text and pathways, then I went back in and linked everything together with a storyline I kind of created just on the fly as I went through.
+- I wanted to use the same font as what is used in basic code (i found out this is monospace), I tried a retro video game font but it looked too contrived.
+
+#### Problems/challenges:
+- this whole thing was seriously tedious as each time I changed the text the whole webpage would reload back to the starting slide. I had to go through the whole game each time in order to check the spelling and even changing a single letter would throw me back to square one again.
+- I had some inital trouble with loading all the images - the pathways were a bit weird at times and also the aspct ratios of the images were really ugly. I decided to just let them be crispy and stretched to hopefully add to the budget feel of the work lol.
+- I needed some help from ChatGPT to get the horse to gallop in a loop next to the text, but I think an element of animation adds a lot to the game.
+- theres probably some typos in the text lol. it was so hard to format the text in code, especially splitting up each line manually by having to add a backwards slash + 'n' every. single. few. words.
 
 ### 🟪 Stage 5
 - Name/Alias:
