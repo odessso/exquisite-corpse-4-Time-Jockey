@@ -126,7 +126,7 @@ function draw() {
     // Draw the animated horse
     let horseX = width / 9 - 10;
     let horseY = height / 2;
-    let horseSize = 100; // Resize the horse image
+    let horseSize = 120; // Resize the horse image
     image(horseImages[currentHorseFrame], horseX, horseY, horseSize, horseSize);
 
     // Update frame counter and switch frames
