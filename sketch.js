@@ -56,7 +56,7 @@ let locations = {
         next: {}
     },
     'l': {
-        text: "--you run into a clearning \nand gaze up at \na mighty jungle temple-- \n \nok human, guess there's \nonly one way \nto go from here. \npesky programmer didn't give \nme or you enough autonmy \nin this damn game. \nto stop complaining and \ngo inside press 'n'",
+        text: "--you run into a clearning \nand gaze up at \na mighty jungle temple-- \n \nok human, guess there's \nonly one way \nto go from here. \n \npesky programmer didn't give \nme or you enough autonomy \nin this damn game. \n \nto stop complaining and \ngo inside press 'n'",
         next: {'n': 'n'}
     },
     'm': {
