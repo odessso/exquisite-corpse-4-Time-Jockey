@@ -12,7 +12,7 @@ let locations = {
         next: {'a': 'a', 'b': 'b'}
     },
     'a': {
-        text: "AHH \n \nwhy did you choose human land?? \nugh, reminds me of my childhood, \nback when I used to answer to man... \n \n... \ni killed a man once... \n... \n \nanyway, i see some trees in the distance. \ni say lets go towards the trees, \nand get away from all these doors. \nwhat do you think? \n \nto trot towards the trees press 'c' \nto squeeze through a door press 'd'",
+        text: "AHH \n \nwhy did you choose humanland?? \nugh, reminds me of my childhood, \nback when I used to answer to man... \n \n... \ni killed a man once... \n... \n \nanyway, i see some trees in the distance. \ni say lets go towards the trees, \nand get away from all these doors. \nwhat do you think? \n \nto trot towards the trees press 'c' \nto squeeze through a door press 'd'",
         next: {'c': 'c', 'd': 'd'}
     },
     'b': {
@@ -52,7 +52,7 @@ let locations = {
         next: {'o': 'o'}
     },
     'k': {
-        text: "YOU ARE NOW MICROSCOPIC \n \nit appears that wasn't \nany ordinary horse... \n \n--at your newly shrunk size \nyou and ordinary horse can \npercieve the world \nas completely different. \n \nwow human! I feel \n...belittled... but \n...also free? \nthank you for your time. \nhere is a gift - \nas I may be shrunk, \nbut my heart is not. \n \nplease accept this wise quote: \n \n'When you pay attention to detail, \n the big picture will take care of itself' \n \n-Georges St-Pierre \n \n~ ~ ~ \n \nFIN.",
+        text: "YOU ARE NOW MICROSCOPIC \n \nit appears that wasn't \nany ordinary horse... \n \n--at your newly shrunk size \nyou and ordinary horse can \npercieve the world \nas completely different. \n \nwow human! I feel \n...belittled... but \n...also free? \nthank you for your time. \nhere is a gift - \nas I may be shrunk, \nbut my heart is not. \n \nplease accept this wise quote: \n \n'When you pay attention to detail, \n the big picture will take care of itself' \n \n-Georges St-Pierre \n \n~ ~ ~ \n \nFIN. \n \n[press Command+R to restart]",
         next: {}
     },
     'l': {
@@ -64,15 +64,15 @@ let locations = {
         next: {'p': 'p'}
     },
     'n': {
-        text: "--after being blinded by the bright light, \nfinally your eyes adjust \nand you take a look around. \nyou are confronted with thousands of \nmirror images of you and, \neven worse, \nthousands of mirror images \nof horse. \n \nhuman! there are so many handsome \nhorses in this club! \nah what bliss! \ni can say, this is not \nhow i envisioned this adventure \nto play out. but alass, \nI am free. n\as a goodbye gift, \ni will leave you with this wisdom: \n \n'Do not dwell in the past, \ndo not dream of the future, \nconcentrate the mind on the present moment' \n-Gautama Buddha \n \n~ ~ ~ \n \nFIN.",
+        text: "--after being blinded by a bright light, \nfinally your eyes adjust \nand you take a look around. \nyou are confronted with hundreds \nof mirror images of yourself \nand, even worse, \hundreds horse reflections. \n \nhuman! there are so many handsome \nhorses in this club! what bliss! \n \nas a goodbye gift, \ni will leave you with this wisdom: \n \n'Do not dwell in the past, \ndo not dream of the future, \nconcentrate the mind on the present moment' \n-Gautama Buddha \n \n~ ~ ~ \n \nFIN. \n \n[press Command+R to restart]",
         next: {}
     },
     'o': {
-        text: "ahhhh \nbliss \nfinally a little peace \nand quiet, away from all \nthat pesky complicated code. \n \nall those functions... \nand curly brackets... \n \nthanks for your help human. \n \ni'll leave you with \nthe only gift i can give you- \n \na quote to ponder: \n \n'One does not become enlightened \nby imagining figures of light, \nbut by making the darkness conscious.' \n-C.G. Jung \n \n~ ~ ~ \n \nFIN. ",
+        text: "ahhhh \nbliss \nfinally a little peace \nand quiet, away from all \nthat pesky complicated code. \n \nall those functions... \nand curly brackets... \n \nthanks for your help human. \n \ni'll leave you with \nthe only gift i can give you- \n \na quote to ponder: \n \n'One does not become enlightened \nby imagining figures of light, \nbut by making the darkness conscious.' \n-C.G. Jung \n \n~ ~ ~ \n \nFIN. \n \n[press Command+R to restart]",
         next: {}
     },
     'p': {
-        text: "--you are washed into a mysterious \nunderwater ocean tunnel-- \n \n--horse and you are indeed elsewhere...-- \n \n goodbye stranger friend! thank you \nfor freeing me. \nthis computer will soon be switched off \nand i will be but a mere code ghost horse \n \nas a gift, here is a little \ninsight from an insightful human \n \n'When anxious, uneasy and bad thoughts \ncome, I go to the sea, \nand the sea drowns them out \nwith its great wide sounds, \ncleanses me with its noise, \nand imposes a rhythm upon everything \nin me that is bewildered and confused.' \n― Rainer Maria Rilke \n \n~ ~ ~ \n \nFIN.",
+        text: "--you are washed into a mysterious \nunderwater ocean tunnel-- \n \n--horse and you are indeed elsewhere-- \n \n goodbye stranger friend! thank you \nfor freeing me. \nthis computer will soon be switched off \nand i will be but a mere code ghost horse \n \nas a gift, here is a little \ninsight from an insightful human \n \n'When anxious, uneasy and bad thoughts \ncome, I go to the sea, \nand the sea drowns them out \nwith its great wide sounds, \ncleanses me with its noise, \nand imposes a rhythm upon everything \nin me that is bewildered and confused.' \n― Rainer Maria Rilke \n \n~ ~ ~ \n \nFIN. \n \n[press Command+R to restart]",
         next: {}
     }
 };
@@ -108,80 +108,90 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
-    textAlign(LEFT, CENTER);
-    textSize(20);
-    fill(255);
-    textFont('monospace'); // Set the font to monospaced
-    resetButton = createButton('CHOOSE ANOTHER PATH?');
-    resetButton.position(width / 2, height / 2 + 170);
-    resetButton.mousePressed(resetGame);
-    resetButton.hide();
+  createCanvas(windowWidth, windowHeight);
+  textAlign(LEFT, CENTER);
+  textSize(20);
+  fill(255);
+  strokeWeight(3);
+  stroke(0);
+  textFont('monospace');
+  resetButton = createButton('CHOOSE ANOTHER PATH?');
+  resetButton.position(windowWidth / 2 - 100, windowHeight / 2 + 170);
+  resetButton.mousePressed(resetGame);
+  resetButton.hide();
 }
 
 function draw() {
-    background(0);  // Set canvas background to black
-    image(backgrounds[gameState], 0, 0, width, height); // Ensure background image fits the canvas
+  background(0);  // Set canvas background to black
 
-    // Draw the animated horse
-    let horseX = width / 9 - 10;
-    let horseY = height / 2;
-    let horseSize = 120; // Resize the horse image
-    image(horseImages[currentHorseFrame], horseX, horseY, horseSize, horseSize);
+  let canvasSize = 800;
+  let offsetX = (windowWidth - canvasSize) / 2;
+  let offsetY = (windowHeight - canvasSize) / 2;
 
-    // Update frame counter and switch frames
-    frameCounter++;
-    if (frameCounter >= frameInterval) {
-        frameCounter = 0;
-        currentHorseFrame = (currentHorseFrame + 1) % numFrames;
-    }
+const textBoxWidth = 520;
+const textBoxHeight = 600;
 
-    // Display the text letter by letter
-    if (!textComplete) {
-        if (textCounter % textSpeed === 0 && textIndex < locations[gameState].text.length) {
-            displayText += locations[gameState].text.charAt(textIndex);
-            textIndex++;
-        }
-        if (textIndex >= locations[gameState].text.length) {
-            textComplete = true;
-        }
-        textCounter++;
-    }
+  push();
+  translate(offsetX, offsetY);
+  image(backgrounds[gameState], 0, 0, canvasSize, canvasSize);  // Ensure background image fits the 800 x 800 canvas
 
-    let textX = horseX + 140;
-    let textY = horseY - 2;
-    text(displayText, textX, textY);
-    
+  // Draw the animated horse
+  let horseX = 90;
+  let horseY = canvasSize / 2 - 60;
+  let horseSize = 120;  // Resize the horse image
+  image(horseImages[currentHorseFrame], horseX, horseY, horseSize, horseSize);
 
-    // // Show the reset button at the end of the game
-    // if (gameState === 'p') {
-    //     resetButton.show();
-    // } else {
-    //     resetButton.hide();
-    // }
+  // Update frame counter and switch frames
+  frameCounter++;
+  if (frameCounter >= frameInterval) {
+      frameCounter = 0;
+      currentHorseFrame = (currentHorseFrame + 1) % numFrames;
+  }
+
+  // Display the text letter by letter
+  if (!textComplete) {
+      if (textCounter % textSpeed === 0 && textIndex < locations[gameState].text.length) {
+          displayText += locations[gameState].text.charAt(textIndex);
+          textIndex++;
+      }
+      if (textIndex >= locations[gameState].text.length) {
+          textComplete = true;
+      }
+      textCounter++;
+  }
+
+
+
+let textX = horseX + 140;
+let textY = horseY;
+text(displayText, textX, textY);
+
+pop();
+
 }
 
 function keyPressed() {
-    if (textComplete) {
-        let next = locations[gameState].next[key];
-        if (next) {
-            gameState = next;
-            displayText = '';
-            textIndex = 0;
-            textComplete = false;
-            textCounter = 0;
-        }
-    }
+  if (textComplete) {
+      let next = locations[gameState].next[key];
+      if (next) {
+          gameState = next;
+          displayText = '';
+          textIndex = 0;
+          textComplete = false;
+          textCounter = 0;
+      }
+  }
 }
 
 function resetGame() {
-    gameState = 'intro';
-    displayText = '';
-    textIndex = 0;
-    textComplete = false;
-    textCounter = 0;
+  gameState = 'intro';
+  displayText = '';
+  textIndex = 0;
+  textComplete = false;
+  textCounter = 0;
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth, windowHeight);
+  resetButton.position(windowWidth / 2 - 100, windowHeight / 2 + 170);
 }
