@@ -52,7 +52,7 @@ let locations = {
         next: {'o': 'o'}
     },
     'k': {
-        text: "YOU ARE NOW MICROSCOPIC \n \nit appears that wasn't \nany ordinary horse... \n \n--at your newly shrunk size \nyou and ordinary horse can \npercieve the world \nas completely different. \n \nwow human! I feel \n...belittled... but \n...also free? \nthank you for your time. \nhere is a gift - \nas I may be shrunk, \nbut my heart is not. \n \nplease accept this wise quote: \n \n'When you pay attention to detail, \n the big picture will take care of itself' \n \n-Georges St-Pierre \n \n~ ~ ~ \n \nFIN. \n \n[press Command+R to restart]",
+        text: "YOU ARE NOW MICROSCOPIC \n \nit appears that wasn't \nany ordinary horse... \n \n--at your newly shrunk size \nyou and ordinary horse can \npercieve the world \nas completely different. \n \nwow human! I feel \n...belittled... but \n...also free? \nthank you for your time. \nhere is a gift - \nas I may be shrunk, \nbut my heart is not. \n \nplease accept this wise quote: \n \n'When you pay attention to detail, \n the big picture will take care of itself' \n \n-Georges St-Pierre \n \n~ ~ ~ \n \nFIN. \n \n[press windows key+R to restart]",
         next: {}
     },
     'l': {
@@ -64,7 +64,7 @@ let locations = {
         next: {'p': 'p'}
     },
     'n': {
-        text: "--after being blinded by a bright light, \nfinally your eyes adjust \nand you take a look around. \nyou are confronted with hundreds \nof mirror images of yourself \nand, even worse, \hundreds horse reflections. \n \nhuman! there are so many handsome \nhorses in this club! what bliss! \n \nas a goodbye gift, \ni will leave you with this wisdom: \n \n'Do not dwell in the past, \ndo not dream of the future, \nconcentrate the mind on the present moment' \n-Gautama Buddha \n \n~ ~ ~ \n \nFIN. \n \n[press Command+R to restart]",
+        text: "--after being blinded by a bright light, \nfinally your eyes adjust \nand you take a look around. \nyou are confronted with hundreds \nof mirror images of yourself \nand, even worse, \hundreds horse reflections. \n \nhuman! there are so many handsome \nhorses in this club! what bliss! \n \nas a goodbye gift, \ni will leave you with this wisdom: \n \n'Do not dwell in the past, \ndo not dream of the future, \nconcentrate the mind on the present moment' \n-Gautama Buddha \n \n~ ~ ~ \n \nFIN. \n \n[press windows key+R to restart]",
         next: {}
     },
     'o': {
@@ -72,7 +72,7 @@ let locations = {
         next: {}
     },
     'p': {
-        text: "--you are washed into a mysterious \nunderwater ocean tunnel-- \n \n--horse and you are indeed elsewhere-- \n \n goodbye stranger friend! thank you \nfor freeing me. \nthis computer will soon be switched off \nand i will be but a mere code ghost horse \n \nas a gift, here is a little \ninsight from an insightful human \n \n'When anxious, uneasy and bad thoughts \ncome, I go to the sea, \nand the sea drowns them out \nwith its great wide sounds, \ncleanses me with its noise, \nand imposes a rhythm upon everything \nin me that is bewildered and confused.' \n― Rainer Maria Rilke \n \n~ ~ ~ \n \nFIN. \n \n[press Command+R to restart]",
+        text: "--you are washed into a mysterious \nunderwater ocean tunnel-- \n \n--horse and you are indeed elsewhere-- \n \n goodbye stranger friend! thank you \nfor freeing me. \nthis computer will soon be switched off \nand i will be but a mere code ghost horse \n \nas a gift, here is a little \ninsight from an insightful human \n \n'When anxious, uneasy and bad thoughts \ncome, I go to the sea, \nand the sea drowns them out \nwith its great wide sounds, \ncleanses me with its noise, \nand imposes a rhythm upon everything \nin me that is bewildered and confused.' \n― Rainer Maria Rilke \n \n~ ~ ~ \n \nFIN. \n \n[press windows key+R to restart]",
         next: {}
     }
 };
@@ -119,6 +119,7 @@ function setup() {
   resetButton.position(windowWidth / 2 - 100, windowHeight / 2 + 170);
   resetButton.mousePressed(resetGame);
   resetButton.hide();
+  noCursor();
 }
 
 function draw() {
